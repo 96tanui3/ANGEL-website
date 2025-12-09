@@ -10,7 +10,7 @@ body {
 
    font-family: "Yu Gothic", sans-serif;
 
-  background-image: url("image/neon_city_2_2.png"); /* ← ここに画像指定 */
+  background-image: url("neon_city_2_2.png"); /* ← ここに画像指定 */
   background-size: cover;
   
   background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
