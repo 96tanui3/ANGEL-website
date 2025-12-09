@@ -10,6 +10,18 @@ body {
 
    font-family: "Yu Gothic", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  body{
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: top;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-size: 16px;
+  }
+}
 
 footer {
     margin-top: 10px;
