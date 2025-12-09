@@ -1,0 +1,33 @@
+body {
+  padding-top: 40px;
+
+  background: radial-gradient(circle at top, #a60c47 0%, #080103 20%, #0d0104 100%);
+  color: #ededed;
+
+  margin-bottom: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+   font-family: "Yu Gothic", sans-serif;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+.リンクの色{
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: clamp(14px, 1vw, 10px);
+}
+
+a:hover {
+    color: #ff31f5;
+}
+
+header {
+    font-size: 32px;
+   font-family: "Zen Kaku Gothic New", sans-serif;
+   font-weight: 600; /* 太め */
+}
