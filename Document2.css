@@ -53,9 +53,12 @@ header {
     font-size: 16px;
   }
   .content{
-    max-width: 90%;
+    max-width: 768px;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.9;
+
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
