@@ -21,7 +21,13 @@ body {
     background-size: contain;
     background-position: top;
 
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .content{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.9;
   }
 }
 /* 背景のフィルタ */
