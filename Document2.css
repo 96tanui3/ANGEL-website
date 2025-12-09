@@ -15,21 +15,7 @@ body {
   
   background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
 }
-@media screen and (max-width: 768px) {
-  body{
-    background-attachment: scroll;
-    background-size: contain;
-    background-position: top;
 
-    font-size: 16px;
-  }
-  .content{
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.9;
-  }
-}
 /* 背景のフィルタ */
 .content {
   max-width: 2000px;
@@ -57,4 +43,19 @@ header {
    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
    font-weight: 400; /* 太め */
 
+}
+@media screen and (max-width: 768px) {
+  body{
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: top;
+
+    font-size: 16px;
+  }
+  .content{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.9;
+  }
 }
