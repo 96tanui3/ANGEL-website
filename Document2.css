@@ -15,6 +15,15 @@ body {
   
   background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
 }
+@media screen and (max-width: 768px) {
+  body{
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: top;
+
+    font-size: 20px;
+  }
+}
 /* 背景のフィルタ */
 .content {
   max-width: 2000px;
