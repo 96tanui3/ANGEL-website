@@ -43,22 +43,4 @@ header {
    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
    font-weight: 400; /* 太め */
 
-}
-@media screen and (max-width: 768px) {
-  body{
-    background-attachment: scroll;
-    background-size: contain;
-    background-position: top;
-
-    font-size: 16px;
-  }
-  .content{
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.9;
-
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
+}}
