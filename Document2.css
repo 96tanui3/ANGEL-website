@@ -18,7 +18,7 @@ body {
 
 /* 背景のフィルタ */
 .content {
-  max-width: 2000px;
+  max-width: 1000px;
   margin: 0px auto;
   padding: 10px;
   background: rgba(43, 10, 21, 0.4);
@@ -43,4 +43,11 @@ header {
    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
    font-weight: 400; /* 太め */
 
+}
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 15px;          /* 画面内に収まる余裕 */
+    max-width: 100%;        /* 枠をスマホ幅いっぱいに */
+    line-height: 1.9;       /* 行間を調整して読みやすく */
+  }
 }
