@@ -48,6 +48,10 @@ header {
     body{
     margin-left: 10px;
     margin-right: 10px;
+    background-image: url("SumahoyouNeon.png"); /* ← ここに画像指定 */
+    background-size: cover;
+  
+  background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
   }
   .content {
     padding: 15px;          /* 画面内に収まる余裕 */
