@@ -45,6 +45,10 @@ header {
 
 }
 @media screen and (max-width: 600px) {
+    body{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .content {
     padding: 15px;          /* 画面内に収まる余裕 */
     max-width: 100%;        /* 枠をスマホ幅いっぱいに */
