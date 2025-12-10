@@ -66,9 +66,8 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   body{
-    background-image: url("SumahoyouNeon.png"); /* ← ここに画像指定 */
+    background-image: url("SumahoYou Hougan.png"); /* ← ここに画像指定 */
     background-size: cover;
   
   background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
   }}
-
