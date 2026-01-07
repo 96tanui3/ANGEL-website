@@ -126,8 +126,16 @@ body {
     text-decoration: none;
 }
 
+.Kotira {
+  color: #ff31f5;
+  text-decoration: none;
+}
+a.Kotira:hover {
+  color: #af18a8;
+}
+
 a:hover {
-    color: #ff31f5;
+  color: #ff31f5;
 }
 
 /* ミスったら消す */
