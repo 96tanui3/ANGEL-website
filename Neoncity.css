@@ -1,0 +1,148 @@
+/* リセット */
+body {
+  margin: 0;
+  background: #05050a;
+  color: #f2f2f2;
+  font-family: "Yu Gothic", sans-serif;
+}
+
+/* 背景固定 */
+.bg {
+  position: fixed;
+  inset: 0;
+  background: url("") center / cover no-repeat;
+  z-index: -1;
+}
+
+/* ヘッダー */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* ニュースバー */
+.news-bar {
+  height: 40px;
+  background: rgb(0, 0, 0);
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.news-label {
+  margin-right: 20px;
+  letter-spacing: 0.2em;
+  color: #00e6ff;
+  font-size: 14px;
+}
+
+.news-text {
+  font-size: 14px;
+  color: #ffd966;
+  white-space: nowrap;
+}
+
+/* 中央パネル配置 */
+.panel-wrap {
+  min-height: 100vh;
+  padding: 120px 20px 100px;
+
+  display: flex;
+  flex-direction: column; /* ← 必須 */
+  align-items: center;    /* 中央基準 */
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* 半透明パネル */
+.panel {
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 30px;
+  background: rgba(42, 42, 42, 0.453);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.6);
+  backdrop-filter: blur(8px);
+}
+
+/* 見出し */
+.panel h1 {
+  text-align: center;
+  color: #ff31f5;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.panel h2 {
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+  letter-spacing: 0.3em;
+  margin-bottom: 40px;
+}
+
+/* シンボル */
+.symbol {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.symbol img {
+  width: 220px;
+  opacity: 0.9;
+}
+
+/* 本文（スクロール） */
+.panel-text {
+  max-height: none;
+  overflow-y: visible;
+  line-height: 2;
+}
+
+/* パネル内セクション見出し */
+.panel-section-title {
+  position: relative;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+/* 見出し文字 */
+.panel-title {
+  font-size: 26px;
+  letter-spacing: 0.3em;
+  color: #f2f2f2;
+  font-weight: 700;
+  margin: 0;
+}
+
+a:hover {
+    color: #ff31f5;
+}
+
+.panel-back {
+  width: 100%;
+  max-width: 900px;
+}
+.リンクの色{
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: clamp(14px, 1vw, 10px);
+}
+
+
+@media screen and (max-width: 600px) {
+  body{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .bg{
+    background-position: center top;
+  }
+}
