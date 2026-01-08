@@ -48,7 +48,7 @@ header {
     body{
     margin-left: 10px;
     margin-right: 10px;
-      font-size: 20px;
+      font-size: 17px;
     background-size: cover;
    background-image: url("neon_city_2_2.png"); /* ← ここに画像指定 */
   background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
@@ -59,6 +59,6 @@ header {
     line-height: 1.9;       /* 行間を調整して読みやすく */
   }
   .リンクの色 {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
