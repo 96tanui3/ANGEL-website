@@ -136,6 +136,11 @@ a:hover {
     font-size: clamp(14px, 1vw, 10px);
 }
 
+.QA {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 
 @media screen and (max-width: 600px) {
   body{
@@ -144,5 +149,17 @@ a:hover {
   }
   .bg{
     background-position: center top;
+  }
+  .panel-text{
+    font-size: 20px;
+  }
+  .news-text{
+    font-size: 18px;
+  }
+  .news-label{
+    font-size: 18px;
+  }
+  .リンクの色 {
+    font-size: 18px;
   }
 }
