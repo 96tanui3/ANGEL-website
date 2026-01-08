@@ -92,6 +92,9 @@ body {
 
 @media screen and (max-width: 768px) {
   body{
-    font-size: 16px;
+    font-size: 20px;
+  }
+     .リンクの色 {
+    font-size: 17px;
   }
 }
