@@ -70,4 +70,6 @@ a:hover {
     background-size: cover;
   
   background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
+  }.リンクの色 {
+    font-size: 14px;
   }}
