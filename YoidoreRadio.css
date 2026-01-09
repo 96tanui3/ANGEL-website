@@ -64,7 +64,7 @@ a:hover {
   width: 100%;
   border-radius: 4px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body{
     background-image: url("SumahoYou Hougan.png"); /* ← ここに画像指定 */
     background-size: cover;
