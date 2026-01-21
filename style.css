@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 60px;
+  background: radial-gradient(circle at top, #0a0f2c 0%, #010108 40%, #000 100%);
+  color: #ffffff;
+
+  font-family: "Arial", sans-serif;
+}
+.sub {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  color: rgba(230, 136, 192, 0.6);
+}
+.main-text {
+  margin-top: 40px;
+  line-height: 1.8;
+  font-size: 15px;
+  color: rgba(228, 219, 222, 0.8);
+}
+
+.date {
+  color: #e0dfdf;
+}
+
+
+.neon-text {
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #ff31f5;
+
+  text-shadow:
+    0 0 4px #fff,
+    0 0 10px #ff31f5,
+    0 0 25px #ff31f5,
+    0 0 40px #00f6ff,
+    0 0 60px rgba(255, 0, 255, 0.5);
+
+  animation:
+    neon-glow 3s ease-in-out infinite,
+    neon-flicker 4s infinite steps(1, end);
+}
+
+/* じわっと明るさが揺れる */
+@keyframes neon-glow {
+  0%   { filter: brightness(0.9); }
+  50%  { filter: brightness(1.15); }
+  100% { filter: brightness(0.9); }
+}
+
+/* ネオン管が不調な感じのチカチカ */
+@keyframes neon-flicker {
+  0%   { opacity: 1; }
+  3%   { opacity: 0.4; text-shadow: none; }
+  6%   { opacity: 1; }
+  9%   { opacity: 0.6; }
+  12%  { opacity: 1; }
+
+  20%  { opacity: 0.2; text-shadow: none; }
+  22%  { opacity: 1; }
+
+  35%  { opacity: 0.8; }
+  55%  { opacity: 1; }
+
+  58%  { opacity: 0.3; text-shadow: none; }
+  60%  { opacity: 1; }
+
+  100% { opacity: 1; }
+}
+
+.リンクの色 {
+  color: #ffffff;
+  text-decoration: none;
+}
+.Kotira {
+  color: #ff31f5;
+  text-decoration: none;
+}
+a.Kotira:hover {
+  color: #af18a8;
+}
+a:hover {
+  color: #ff31f5;
+}
+
+/* テーブル外枠 */
+.archive-table {
+  border: 1px solid rgba(255,255,255,0.35);
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* 行 */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cell {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.35);
+
+  text-align: left;        /* ← ここで文字を左寄せ */
+  box-sizing: border-box;  /* 念のため */
+}
+.title {
+  border-right: 1px solid rgba(255,255,255,0.35);
+  font-weight: 500;
+}
+.desc {
+  opacity: 0.85;
+  color: #d327ca;
+}
+/* 最終行の下線を消す（任意） */
+.row:last-child .cell {
+  border-bottom: none;
+}
+
+
+@media (min-width: 769px) {
+  .archive-row {
+    border-left: 1px solid rgba(255,255,255,0.25);
+    border-right: 1px solid rgba(255,255,255,0.25);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .archive-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .archive-num {
+    text-align: left;
+    font-size: 1rem;
+    opacity: 0.7;
+  }
+}
