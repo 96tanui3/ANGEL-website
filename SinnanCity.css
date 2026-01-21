@@ -1,0 +1,175 @@
+/* リセット */
+body {
+  margin: 0;
+  background: #05050a;
+  color: #f2f2f2;
+  font-family: "Yu Gothic", sans-serif;
+
+      max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 背景固定 */
+.bg {
+  position: fixed;
+  inset: 0;
+  background: url("image/neoncity_2.jpg") center / cover no-repeat;
+  z-index: -1;
+}
+
+/* ヘッダー */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* ニュースバー */
+.news-bar {
+  height: 40px;
+  background: rgb(0, 0, 0);
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.news-label {
+  margin-right: 20px;
+  letter-spacing: 0.2em;
+  color: #00e6ff;
+  font-size: 14px;
+}
+
+.news-text {
+  font-size: 14px;
+  color: #ffd966;
+  white-space: nowrap;
+}
+
+/* 中央パネル配置 */
+.panel-wrap {
+  min-height: 100vh;
+  padding: 70px 20px 1px;
+
+  display: flex;
+  flex-direction: column; /* ← 必須 */
+  align-items: center;    /* 中央基準 */
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* 半透明パネル */
+.panel {
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 30px;
+  background: rgba(33, 33, 33, 0.546);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.6);
+  backdrop-filter: blur(5px);
+}
+
+/* 見出し */
+.panel h1 {
+  text-align: center;
+  color: #ff31f5;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.panel h2 {
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+  letter-spacing: 0.3em;
+  margin-bottom: 40px;
+}
+
+/* シンボル */
+.symbol {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.symbol img {
+  width: 220px;
+  opacity: 0.9;
+}
+
+/* 本文（スクロール） */
+.panel-text {
+  max-height: none;
+  overflow-y: visible;
+  line-height: 2;
+}
+
+/* パネル内セクション見出し */
+.panel-section-title {
+  position: relative;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+/* 見出し文字 */
+.panel-title {
+  font-size: 26px;
+  letter-spacing: 0.3em;
+  color: #f2f2f2;
+  font-weight: 700;
+  margin: 0;
+}
+.panel-back {
+  width: 100%;
+  max-width: 900px;
+}
+
+.リンクの色 {
+  color: rgba(228, 219, 222, 0.8);
+  text-decoration: none;
+
+  font-size: 14px;
+
+  margin-left: 30px;
+  padding-bottom: 50px;
+}
+a:hover {
+  color: #ff31f5;
+}
+
+.QA {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width: 600px) {
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 17px;
+  }
+.panel-wrap {
+  min-height: 100vh;
+  padding: 70px 5px 1px;
+}
+.panel-text{
+    font-size: 17px;
+  }
+.news-text{
+    font-size: 18px;
+  }
+.news-label{
+    font-size: 18px;
+  }
+.リンクの色 {
+  font-size: 15px;
+
+  margin-left: 0px;
+}
+}
