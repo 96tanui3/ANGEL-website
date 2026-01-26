@@ -45,6 +45,11 @@ img {
   line-height: 2.1;
 }
 
+.document_3 {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 500;
+}
+
 .リンクの色 {
   color: rgba(228, 219, 222, 0.8);
   text-decoration: none;
