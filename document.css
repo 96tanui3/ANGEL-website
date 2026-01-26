@@ -31,11 +31,11 @@ img {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: 400;
 }
-.document_2_body {
-  background-image: url("image/neoncity_1.png"); /* ← ここに画像指定 */
-  background-size: cover;
-  
-  background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
+.bg {
+  position: fixed;
+  inset: 0;
+  background: url("image/neoncity_1.png") center / cover no-repeat;
+  z-index: -1;
 }
 .content {
   padding: 10px;
