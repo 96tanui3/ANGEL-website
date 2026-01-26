@@ -3,15 +3,17 @@ body {
   color: #000000;
   font-family: "Yu Gothic", sans-serif;
 
-  background-image: url("image/doc_0.png"); /* ← ここに画像指定 */
-  background-size: cover;
-  
-  background-attachment: fixed; /* ← 背景固定して文字だけスクロール */
-
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px 10px;
 }
+.bg {
+  position: fixed;
+  inset: 0;
+  background: url("image/doc_0.png") center / cover no-repeat;
+  z-index: -1;
+}
+
 .リンクの色{
   color: rgb(0, 0, 0);
   text-decoration: none;
