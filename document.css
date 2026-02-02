@@ -50,6 +50,30 @@ img {
   font-weight: 500;
 }
 
+.document_4 {
+    font-weight: 400;
+}
+
+.document_5 {
+  font-size: 40px;
+  color: #00f6ff;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 10px #00e6ff;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+}
+
+.document_6 {
+    font-weight: 200;
+}
+
+.リンク_2 {
+  color: #ff31f5;
+}
+.リンク_2:hover {
+  color: #af18a8;
+}
+
 .リンクの色 {
   color: rgba(228, 219, 222, 0.8);
   text-decoration: none;
