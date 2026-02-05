@@ -74,6 +74,13 @@ img {
   color: #af18a8;
 }
 
+.ハッシュタグ {
+  color: #00f6ff;
+}
+.ハッシュタグ:hover {
+  color: #1da4a9;
+}
+
 .リンクの色 {
   color: rgba(228, 219, 222, 0.8);
   text-decoration: none;
