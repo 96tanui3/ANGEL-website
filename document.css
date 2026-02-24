@@ -67,8 +67,30 @@ img {
     font-weight: 200;
 }
 
+.document_7 {
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+}
+.bg_2 {
+  position: fixed;
+  inset: 0;
+  background: url("image/neoncity_6.jpg") center / cover no-repeat;
+  z-index: -1;
+}
+.content_2 {
+  padding: 10px;
+  background: rgba(15, 15, 22, 0.4);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  line-height: 2.1;
+}
+
 .リンク_2 {
   color: #ff31f5;
+  text-decoration: none;
 }
 .リンク_2:hover {
   color: #af18a8;
