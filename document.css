@@ -88,6 +88,15 @@ img {
   line-height: 2.1;
 }
 
+/* テキストアニメーション */
+#typingText::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 .リンク_2 {
   color: #ff31f5;
   text-decoration: none;
