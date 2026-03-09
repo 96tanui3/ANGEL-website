@@ -87,7 +87,6 @@ img {
   border-radius: 6px;
   line-height: 2.1;
 }
-
 /* テキストアニメーション */
 #typingText::after {
   content: "|";
@@ -95,6 +94,11 @@ img {
 }
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+.document_9 {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 900;
 }
 
 .リンク_2 {
