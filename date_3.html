@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酔いどれラジオ</title>
+    <link rel="stylesheet" href="Date.css">
+</head>
+
+<header>
+  <h1 class="title">黒血の男</h1>
+  <p class="sub">AETHER COLUMN // No.29</p>
+</header>
+
+<body>
+  <main class="container">
+  <p>この音声は████出版社の記者が行なったインタビューの音声記録です。対面形式のインタビューとして行われたものと見られますが、録音者の所属、録音場所、録音日時についてはこの音声から確認することができません。</p>
+  <p>また、インタビュイーの男（S）に関する情報も確認できません。</p>
+
+  <section class="radio-player">
+    <button id="playBtn" class="play-btn">▶ 音声を再生する</button>
+    <audio id="radioAudio" src="radio.mp3"></audio>
+  </section>
+
+  <section id="transcript" class="transcript hidden">
+<p>( 録音開始 )</p>
+<p>…今回はご協力いただきありがとうございます。まず、名前をお伺いしてもよろしいでしょうか？</p>
+<p>『名前ね。これってハンドルネームでもいいんだっけ？』</p>
+<p>はい。記事に載せる際に記載する名前なので、ご自由に名乗ってもらって構いませんよ</p>
+<p>『なんでもね……じゃあ鯖缶が好きなのでSで』</p>
+<p>Sさんですね。では早速、あなたが見た者について、お話ししていただけますか？</p>
+<p>『あぁ。俺は昨日、ダチと酒飲んで酔っ払って、んで家までそんな遠くなかったから歩いて帰ったんだよ。結構な量飲んだから曖昧な記憶なんだけどよ、気づいたら知らない道に出てたんだ』</p>
+<p>なるほど。</p>
+<p>『帰り道が分かんなくなって、誰かに道を聞こうとして人を探した。また歩いて、で、マフラーを巻いて暖かそうな格好してる男を見つけたから声かけようとしたんだ。でもそいつ、俯いてて、なんか変な雰囲気？　オーラって言うんかな。まあ、そういうのがあったんだ』</p>
+<p>その男が何をしていたとか、何を見ていたとか覚えていますか？</p>
+<p>『なんもしてなかったよ。それになんも見てなかった。ただ俯いて……ああそう、腕から黒い液体が流れてた。ポタポタって、片腕が義手だったからオイルでも漏れてんのかって思ったんだけどよ、液体が垂れてたのは生身の腕からだったんだ』</p>
+<p>奇妙ですね。その液体は水っぽい液体でしたか？　それとも血液のような粘度の液体でしたか？</p>
+<p>『粘度？　あー…そうだな、血液のほうが近かったのかもしれんな。そういえば、天使の血液って黒かったよな。あーいう感じだよ。気色悪くて吐きそうになるあの感じ。分かるか？』</p>
+<p>分かりますよ。では、Sさんが見たのは天使だった…ということですか？</p>
+<p>『いや、天使じゃなかったよ。俺が道を聞いた時、あいつは普通に喋って会話ができてたしな。それにあいつ、不機嫌だったのか俺を睨んで、道聞いただけなのに怒ってる声色で話すんだよ。ムカついて、思わず殴るとこだったわ』</p>
+<p>天使の血液を流す人間、と言うのが一番近いのでしょうか？</p>
+<p>『さあな。でもあいつは確かに人間だったよ。気色悪い人間だった…』</p>
+<p>なるほど。貴重なお話ありがとうございます。では、次にこちらの写真を見ていただけませんか？</p>
+<p>（インタビュイーに３枚の男の写真を見せた）</p>
+<p>この中に、あなたが見た男はいますか？</p>
+<p>『んー？』</p>
+<p>（しばらくの沈黙）</p>
+<p>『こいつかな。この目、この目が俺を睨んできたんだ』</p>
+<p>分かりました。本日のインタビューはこれにて終了です。改めて、ご協力ありがとうございます。</p>
+
+<p>　<br>　</p>
+
+<p>『結構早かったな。で、この男がなんかあんのか？　協力してやったんだから、少しくらい教えろよ』</p>
+<p>（しばらくの沈黙）</p>
+<p>『…おい？』</p>
+<p><a href="date_1.html" class="ハッシュタグ">ネズミ男</a>って知っていますか？　2053年5月1日、<a href="document_1.html" class="ハッシュタグ">南街にて発生した天使災害</a>の天使を育て、そして殺したと言われている男です。</p>
+
+</section>
+  
+  <br><a href="index.html" class="リンクの色">記録一覧に戻る</a>
+
+</main>
+</body>
+</html>
+
+<script>
+const btn = document.getElementById("playBtn");
+const audio = document.getElementById("radioAudio");
+const text = document.getElementById("transcript");
+
+let isTextVisible = false; // 文字の表示状態を自前で管理する
+
+btn.addEventListener("click", () => {
+  // 文字の表示/非表示をトグル
+  isTextVisible = !isTextVisible;
+
+  if (isTextVisible) {
+    text.classList.remove("hidden");
+    btn.textContent = "■ 再生中";
+
+    // 音声再生
+    audio.play();
+  } else {
+    text.classList.add("hidden");
+    btn.textContent = "▶ 音声を再生する";
+
+    // 音声停止
+    audio.pause();
+    audio.currentTime = 0;
+  }
+});
+</script>
+
+</body>
+</html>
