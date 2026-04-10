@@ -127,6 +127,63 @@ img {
   color: #8a1939;
 }
 
+.document_11 {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 200;
+}
+.sign {
+  text-align: center;
+  font-size: 60px;
+  color: #0ff;
+  text-shadow: 
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff;
+  animation: blink 0.5s infinite;
+}
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0.2;
+  }
+}
+
+.archive_1 {
+  text-align: center;
+  font-size: 40px;
+  display: block;
+  font-weight: 400;
+}
+.ID-b {
+  font-size: 20px;
+}
+.ID-b rt {
+  font-weight: normal;
+  font-size: 0.7em;
+  font-size: 10px;
+}
+.overview {
+  margin-left: 1em;
+}
+.hidden-box {
+  margin-bottom: 65px;
+}
+.hidden-box summary {
+  cursor: pointer;
+  color: #e41a56;
+  letter-spacing: 0.15em;
+}
+.hidden-box summary:hover{
+  color: #8a1939;
+  text-decoration: underline;
+}
+.hidden-text {
+  margin-left: 1em;
+}
+
+
 .リンク_2 {
   color: #ff31f5;
   text-decoration: none;
@@ -165,6 +222,13 @@ body {
 }
 .document_2 {
   font-size: 28px;
+}
+.sign {
+  font-size: 43px;
+}
+
+.archive_1 {
+  font-size: 30px;
 }
 
 .リンクの色 {
