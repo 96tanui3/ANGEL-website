@@ -51,7 +51,7 @@ img {
 }
 
 .document_4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .document_5 {
@@ -64,7 +64,7 @@ img {
 }
 
 .document_6 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .document_7 {
@@ -181,6 +181,25 @@ img {
 }
 .hidden-text {
   margin-left: 1em;
+}
+
+.archive_2 {
+  color: #868686;
+  margin-left: 1em;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #fff;
+}
+.sun {
+  margin: 0 20px;
 }
 
 
