@@ -202,6 +202,13 @@ img {
   margin: 0 20px;
 }
 
+.bg_3 {
+  position: fixed;
+  inset: 0;
+  background: url("image/List.png") center / cover no-repeat;
+  z-index: -1;
+}
+
 
 .リンク_2 {
   color: #ff31f5;
