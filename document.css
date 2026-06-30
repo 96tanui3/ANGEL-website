@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'nebula'; /* 好きなフォント名 */
+  src: url('fonts/CheeseGothic-Black.otf') format('opentype'); /* ★formatは'truetype'にする */
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Ruthless'; /* 好きなフォント名 */
+  src: url('fonts/Kings-Regularのコピー.ttf') format('truetype'); /* ★formatは'truetype'にする */
+  font-display: swap;
+}
+
 body {
     background-color: rgb(0, 0, 0);
     color: #e0dfdf;
@@ -207,6 +218,16 @@ img {
   inset: 0;
   background: url("image/List.png") center / cover no-repeat;
   z-index: -1;
+}
+
+.document_13 {
+  font-family: 'nebula', sans-serif;
+  font-weight: 200;
+}
+
+.SUKIMA_3 {
+  font-family: 'Ruthless', sans-serif;
+  font-size: 50px;
 }
 
 
