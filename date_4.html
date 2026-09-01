@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酔いどれラジオ</title>
+    <link rel="stylesheet" href="Date.css">
+</head>
+
+<header>
+  <h1 class="title">YOIDORE RADIO</h1>
+  <p class="sub">No.20 Hz　Today’s partner is fruit beer.</p>
+</header>
+
+<body>
+  <main class="container">
+  <p>この音声はネオンシティにてラジオ電波を不正にジャックして行われた海賊放送です。不明な要因で不定期に行われるものであり、時に警察政府でしか知り得ない情報を不正に入手して発信している犯罪行為も行なっています。</p>
+  <p>発信場所は不明です。現在犯人逮捕を急いでいます。</p>
+
+  <section class="radio-player">
+    <button id="playBtn" class="play-btn">▶ 音声を再生する</button>
+    <audio id="radioAudio" src="radio.mp3"></audio>
+  </section>
+
+  <section id="transcript" class="transcript hidden">
+  <p>[ノイズ音]</p>
+  <p>Helloネオンシティ！　酔いどれ雑談タブロイドの時間だよ。随分と久しぶりになるね、聞いてくれている人は何人いるのかな？</p>
+  <p>俺が街中の電波をジャックしたあの日から、一体何人のデータが消去されたのか、みんな気になっているんじゃないのかな？</p>
+  <p>ルールは変わらず、毎日二人ずつランダムでデータを消去しているから、計算が得意なリスナーなら分かるかも！</p>
+  <p>あ、でも、サーバーが強化されて、一時期データ消去システムがブロックされてたんだよね。計算意味無し！</p>
+  <p>まあ正直人数なんてどうでもいいよ。俺は一刻でも早く、矢吹誠の記録を見つけて欲しいだけなんだよ。</p>
+  <p>それなのに、未だ情報はゼロ。どういうこと？</p>
+  <p>みんな、自分のデータがない人間の苦しさ、分かったでしょ？</p>
+  <p>俺はその苦しみを、たった一人で十年以上も耐えて来たのに。</p>
+  <p>[沈黙]</p>
+  <p>やろうと思えば、シンナンの人間全員のデータを一斉消去することもできるんだ。早く見つけて。</p>
+  <p>[ドアが開く音]</p>
+  <p>[沈黙]</p>
+  <p>待ってるね。</p>
+    <br>　
+</section>
+  
+  <br><a href="index.html" class="リンクの色">記録一覧に戻る</a>
+
+</main>
+</body>
+</html>
+
+<script>
+const btn = document.getElementById("playBtn");
+const audio = document.getElementById("radioAudio");
+const text = document.getElementById("transcript");
+
+let isTextVisible = false; // 文字の表示状態を自前で管理する
+
+btn.addEventListener("click", () => {
+  // 文字の表示/非表示をトグル
+  isTextVisible = !isTextVisible;
+
+  if (isTextVisible) {
+    text.classList.remove("hidden");
+    btn.textContent = "■ 再生中";
+
+    // 音声再生
+    audio.play();
+  } else {
+    text.classList.add("hidden");
+    btn.textContent = "▶ 音声を再生する";
+
+    // 音声停止
+    audio.pause();
+    audio.currentTime = 0;
+  }
+});
+</script>
+
+</body>
+</html>
